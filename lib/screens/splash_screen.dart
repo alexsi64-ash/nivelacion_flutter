@@ -59,7 +59,7 @@ class _SplashScreenState extends State<SplashScreen> {
       Duration(seconds: 3), // Indica el tiempo
         () => Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => Onboardingscreen()),
+            MaterialPageRoute(builder: (context) => OnboardingScreen()),
         ),
     );
   }
