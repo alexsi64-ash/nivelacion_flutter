@@ -1,4 +1,7 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:nivelacion_flutter/screens/onboardingScreen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -46,6 +49,18 @@ class _SplashScreenState extends State<SplashScreen> {
           ],
         ),
       ),
+    );
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    Timer(
+      Duration(seconds: 3), // Indica el tiempo
+        () => Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => Onboardingscreen()),
+        ),
     );
   }
 }
